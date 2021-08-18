@@ -1,0 +1,5 @@
+Установили СУБД MySQL.
+Создали БД example и разместили в ней таблицу.
+Создание дампа в командной строке: mysqldump example > example.sql
+Создали БД sample и залили дамп базы example: mysql sample < example.sql
+Создали дамп единственной таблицы help_keyword из перыз 100 строк: mysqldump --where="true limit 100" mysql help_keyword > dump.sql
